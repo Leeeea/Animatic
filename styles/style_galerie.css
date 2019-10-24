@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+	font-family: 'Raleway';
+    font-size: 14px;
+    background: rgb(22, 22, 22);
+    background-image: url(../img/fondetoile.png);
+
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.creation{
+    padding-bottom: 125px;
+	background-color: black;
+	width: 100%;
+    margin: 0px;
+    padding-bottom: 50px;	
+}
+
+.flexmenu{
+	display: flex;	
+}
+
+.espace{
+    justify-content: space-between;
+}
+
+/* LOGOS */
+
+.logo{
+    margin: 20px;
+}
+    
+.logo1{ 
+    width: 80px;
+    height: 70px;
+}
+
+/* MENU */
+.menu {
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Raleway;
+}
+  
+.menu a {
+    float: right;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+  
+.menu a:hover {
+    /* background-color: #474747; */
+    color: #FFB800;
+    transition-duration: 0.4s;
+}
+
+.neon:hover{
+	color:white;
+	text-shadow: 
+	0 0 10px white,
+	 0 0 30px rgb(255, 233, 153), 
+	 0 0 40px rgb(253, 0, 0),
+	 0 0 70px rgb(225, 0, 255), 
+	 0 0 80px rgb(225, 0, 255), 
+	 0 0 100px #183152, 
+	 0 0 150px #183152;
+}
+
+.galerie{
+    padding: 75px;
+}
+
+.texte{
+    font-family: Raleway;
+    width: 200px;
+    height: 100px;
+    margin: 100px auto 0 auto;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+.texte p{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 500; 
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+.texte p:hover{
+    color: #FFB800;
+    transition-duration: 0.5s;
+}
+
+/*************************EFFETS***************************/
+
+/*********************FIN EFFETS***************************/
+
+
+/*********************COULEURS****************************/
+.couleurlight{
+    background: orangered;
+    height: 120px;
+    width: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;  
+    border-radius: 60px;
+}
+/*********************FIN COULEURS****************************/
+
+.picture{
+	width: 65px;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+}
+
+.ellipse1:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.fond{
+    text-align: center;
+    background-color: rgba(36, 18, 78, 0.5);
+    padding-top: 20px;
+    padding-bottom: 100px;
+    
+}
+
+.video{
+    margin: 50px;
+}
+
+/*********************IMAGES***************/
+
+.img{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+   
+}
+
+.fin{
+    color: white;
+    text-align: center;
+}
+
+/**********************BOITE******************/
+
+.boite{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 15pt;
+    text-align: center;
+}
+
+.boite1{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: rgb(48, 48, 48);
+    margin: 50px;
+}
+
+.boite .boite1 p{
+    margin-top: 100px;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 35px;
+    font-family :'Raleway';
+    color: white;
+    font-size: 15px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 15pt;
+    margin: 30px;
+}
+
+footer a:hover{
+    color: #FFB800;
+    transition-duration: 0.5s;
+}
+
+hr{
+    border: 1px solid white;
+    width: 500px;
+    margin-top: 15px;
+}

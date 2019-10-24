@@ -1,0 +1,240 @@
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+    background-color: black;
+}
+
+img.superbg {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.blink {
+    color:black; 
+    animation: colorblink 3s infinite;
+    font-size: 120px;
+}
+
+@keyframes colorblink { 
+  0% { }
+  70% { color:white;
+        text-shadow : 
+        0 0 10px white;
+        text-shadow : 
+        0 0 30px rgb(255, 233, 153);
+        text-shadow :  
+        0 0 40px rgb(253, 0, 0),
+        0 0 70px rgb(225, 0, 255), 
+        0 0 80px rgb(225, 0, 255), 
+        0 0 100px #183152, 
+        0 0 150px #183152; } 
+}
+
+.neon:hover{
+	color:white;
+	text-shadow: 
+	0 0 10px white,
+	 0 0 30px rgb(255, 233, 153), 
+	 0 0 40px rgb(253, 0, 0),
+	 0 0 70px rgb(225, 0, 255), 
+	 0 0 80px rgb(225, 0, 255), 
+	 0 0 100px #183152, 
+	 0 0 150px #183152;
+}
+
+/*************************EFFETS***************************/
+ .shadow{
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 
+	0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* LOGOS */
+
+.logo{
+    margin: 20px;
+}
+    
+.logo1{ 
+    width: 80px;
+    height: 70px;
+}
+
+/* FIN LOGOS */
+
+.flexmenu{
+	display: flex;	
+}
+
+.menu {
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Raleway;
+
+}
+  
+.menu a {
+    float: right;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+  
+.menu a:hover {
+    /* background-color: #474747; */
+    color: #FFB800;
+    transition-duration: 0.4s;
+}  
+
+.espace{
+    justify-content: space-between;
+   
+}
+
+/**********************************************************/
+/***********************PARTIE 1***************************/
+/**********************************************************/
+
+.leblog{
+    text-align: center;  
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 110px;
+    padding-top: 5vh; 
+    color:white;
+    margin-top: 150px;
+	text-shadow: 
+	0 0 10px white,
+	 0 0 30px rgb(255, 233, 153), 
+	 0 0 40px rgb(253, 0, 0),
+	 0 0 70px rgb(225, 0, 255), 
+	 0 0 80px rgb(225, 0, 255), 
+	 0 0 100px #183152, 
+	 0 0 150px #183152;
+}
+
+.ligne{
+    width: 650px;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    background-color: white;
+}
+
+/**********************************************************/
+/***********************FIN PARTIE 1***********************/
+/**********************************************************/
+
+p{
+    color: white;
+    font-family: 'Hind Madurai', sans-serif; 
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 70px;
+    font-size: 15px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+}
+
+h2{
+    color: white;
+    font-family: 'Lora', italic;
+    margin-left: 80px;
+}
+
+h3{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+a{
+    text-decoration:none;
+    color: white;
+}
+
+a:hover{
+    color: #FFB800;
+    transition-duration: 0.5s;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 35px;
+    font-family :'Raleway';
+    color: white;
+    font-size: 15px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 15pt;
+    margin: 30px;
+}
+
+footer a:hover{
+    color: #FFB800;
+    transition-duration: 0.5s;
+}
+
+hr{
+    border: 1px solid white;
+    width: 500px;
+    margin-top: 15px;
+}
+
+.imgarticle{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.contact{
+    display: block;
+    max-width: 200px;
+	padding: 15px 30px;
+	font-weight: 500;
+	font-size: 18px;
+	color: #FFF;
+	text-decoration: none;
+    border: 3px solid #FFF;
+    margin: 50px auto 50px auto;
+}
+
+.fin{
+    text-align: center;
+}
+
+.article{
+    background-color: rgba(36, 18, 78, 0.5);
+    border: 3px solid white;
+    border-radius: 50px;
+    margin: 50px 5% 50px 5%;
+    font-size: 15pt;
+}
+
+.article p{
+    font-size: 14pt;
+}
