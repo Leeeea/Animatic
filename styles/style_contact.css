@@ -1,122 +1,96 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
-	padding: 0px;
-	margin: 0px;
-	font-family: 'Raleway';
-    font-size: 14px;
-    background: rgb(22, 22, 22);
-    background-image: url(../img/fondetoile.png);
+    background: #000d1f;
+    margin: 0px;
 }
 
-.flex{
-	display : flex;
+
+.bg{
+    position: fixed;
+    z-index: -1;
+    top:0px;
+    width: 100%;
+}
+.introrea>img:nth-child(2){
+    display: none;
 }
 
-.menu {
-    padding-top: 20px;
-    color: #ffffff;
-    font-size: 20px;
+@media screen and (min-width: 500px){
+    .introrea>img:nth-child(2){
+        display: initial;
+    }
+}
+/* MENU */
+.menu{
+    background: white;
+    padding: 20px;
+    text-align: center;
+}
+.menu>p{
+    font-size: 10px;
+    margin: 0px 0px 10px 0px;
+    letter-spacing: 5px;
+    font-family: "Raleway";
 }
 
-.menu a {
-    float: right;
-    color: #ffffff;
-    padding: 10px 12px;
+h2{
+    font-family: "Raleway";
+    margin: 0px;
+    font-weight: 200;
+}
+a{
+    margin: 0px;
+    color: #000d1f;
     text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 500;
+    padding: 0px;
+    margin: 10px;
 }
-
-.menu a:hover {
+a:hover{
     color: #FFB800;
-    transition-duration: 0.4s;
 }
 
-.espace{
-    justify-content: space-between;
+/* MAIN */
+.bg{
+    height: 100%;
 }
 
-.logo{
-margin: 20px;
+form{
+    background: #FFB800;
+    margin: auto;
+    padding: 30px;
 }
 
-.logo1{
-    width: 80px;
-    height: 70px;
-}
+/* FOOTER */
 
-.neon:hover{
-	color:white;
-	text-shadow:
-	0 0 10px white,
-	 0 0 30px rgb(255, 233, 153),
-	 0 0 40px rgb(253, 0, 0),
-	 0 0 70px rgb(225, 0, 255),
-	 0 0 80px rgb(225, 0, 255),
-	 0 0 100px #183152,
-	 0 0 150px #183152;
-}
-
-
-/*****************************/
-/*********FORMULAIRE**********/
-/*****************************/
-
-
-form {
-    margin: 0 auto;
-    width: 600px;
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-    background-color: rgba(36, 18, 78, 0.5);
-    margin: 200px auto 300px auto;
-}
-
-form div + div {
-    margin-top: 1em;
-}
-
-input, textarea {
-    padding: 10px;
-    font-size: 13pt;
-    width: 550px;
-    box-sizing: border-box;
-    border: 2px solid #999;
-    border-radius: 5px;
-    margin: 20px;
-}
-
-textarea {
-    vertical-align: top;
-    height: 10em;
-    font-family: 'Raleway';
-    font-weight: 600;
-}
-
-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    font-size: 13pt;
-    border-radius: 5px;
-    border: none;
-    width: 100px;
-}
-
-button:hover{
-    background-color: rgb(141, 141, 141);
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 35px;
+    font-family :'Raleway';
     color: white;
-    transition-duration: 0.4s;
+    font-size: 10px;
+    margin-top: 50px;
 }
 
-@media only screen and (max-width: 720px) {
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 10pt;
+    margin: 30px;
+    font-weight: 500;
+}
 
-	form {
-		width: 80%;
-	}
+footer a:hover{
+    color: #FFB800;
+    transition-duration: 0.5s;
+}
 
-	form>div>input, form submit, form textarea {
-		width: 80%;
-	}
-
-
+hr{
+    border: 1px solid white;
+    width: 50%;
+    margin-top: 15px;
 }

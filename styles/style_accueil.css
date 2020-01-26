@@ -1,610 +1,257 @@
-img.superbg {
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:-1;
-    width: 100vw;
-    height: 100vh;
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000d1f;
+    margin: 0px;
+}
+* {
+    outline: 0;
 }
 
 
-.blink {
-    color:black;
-    animation: colorblink 3s infinite;
-    font-size: 120px;
+.bg{
+    position: fixed;
+    z-index: -1;
+    top:0px;
+    width: 100%;
+}
+.intro>img:nth-child(2){
+    display: none;
 }
 
-@keyframes colorblink {
-  0% { }
-  70% { color:white;
-        text-shadow :
-        0 0 10px white;
-        text-shadow :
-        0 0 30px rgb(255, 233, 153);
-        text-shadow :
-        0 0 40px rgb(253, 0, 0),
-        0 0 70px rgb(225, 0, 255),
-        0 0 80px rgb(225, 0, 255),
-        0 0 100px #183152,
-        0 0 150px #183152; }
-}
-
-/**********************************************************/
-/************************COULEURS**************************/
-/**********************************************************/
-.couleurlight{
-    background: #FAFF00;
-}
-
-.couleurmedium1{
-    background: #FFB800;
-}
-
-.couleurmedium2{
-    background: rgb(255, 123, 0);
-}
-
-.couleurdark{
-    background: rgb(255, 60, 0);
-}
-
-.neon:hover{
-	color:white;
-	text-shadow:
-	0 0 10px white,
-	 0 0 30px rgb(255, 233, 153),
-	 0 0 40px rgb(253, 0, 0),
-	 0 0 70px rgb(225, 0, 255),
-	 0 0 80px rgb(225, 0, 255),
-	 0 0 100px #183152,
-	 0 0 150px #183152;
-}
-
-.neonbox:hover{
-	box-shadow:
-	0 0 10px white,
-	 0 0 30px rgb(255, 233, 153),
-	 0 0 40px rgb(253, 0, 0),
-	 0 0 70px rgb(225, 0, 255),
-	 0 0 80px rgb(225, 0, 255),
-	 0 0 100px #183152,
-	 0 0 150px #183152;
-	transition-duration: 1s;
-}
-
-/*************************EFFETS***************************/
-
-.shadow{
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-	0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/**********************************************************/
-/*********************FIN COULEURS*************************/
-/**********************************************************/
-
-
-/**********************************************************/
-/************************MENU******************************/
-/**********************************************************/
-
-/* LOGOS */
-
-.logo{
-    margin: 20px;
-}
-
-.logo1{
-    width: 80px;
-    height: 70px;
+@media screen and (min-width: 500px){
+    .intro>img:nth-child(2){
+        display: initial;
+    }
 }
 
 /* MENU */
-
-/**********************************************************/
-/***********************FIN MENU***************************/
-/**********************************************************/
-
-.flexmenu{
-	display: flex;
-}
-
-.menu {
-    padding-top: 20px;
-    color: #ffffff;
-    font-size: 20px;
-    font-family: Raleway;
-}
-
-.menu a {
-    float: right;
-    color: #ffffff;
-    padding: 10px 12px;
-    text-decoration: none;
-}
-
-.menu a:hover {
-    color: #FFB800;
-    transition-duration: 0.4s;
-}
-
-.espace{
-    justify-content: space-between;
-}
-
-/**********************************************************/
-/***********************PARTIE 1***************************/
-/**********************************************************/
-
-.animatic{
+.menu{
+    background: white;
+    padding: 20px;
     text-align: center;
-    font-family: Raleway;
-    font-weight: bold;
-    font-size: 110px;
-    padding-top: 30vh;
-    color:white;
-	text-shadow:
-	0 0 10px white,
-	 0 0 30px rgb(255, 233, 153),
-	 0 0 40px rgb(253, 0, 0),
-	 0 0 70px rgb(225, 0, 255),
-	 0 0 80px rgb(225, 0, 255),
-	 0 0 100px #183152,
-	 0 0 150px #183152;
 }
-
-.ligne{
-    width: 650px;
-    height: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 40px;
-    background-color: white;
+.menu>p{
+    font-size: 10px;
+    margin: 0px 0px 10px 0px;
+    letter-spacing: 5px;
+    font-family: "Raleway";
 }
-
-/* FLEX POUR ELLIPSES */
-
-.flex{
-    display: flex;
-    margin:20px;
-    justify-content: center;
-}
-
-/* ELLPSES */
-
-.ellipse1{
-    width: 80px;
-    height: 80px;
-	margin-left: auto;
-	margin-top: 9px;
-    border-radius:100px;
-}
-
-.ellipse2{
-    width: 116px;
-    height: 116px;
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius:100px;
-    margin-bottom: 270px;
-}
-
-.ellipse3{
-    width: 90px;
-    height: 90px;
-	margin-right: auto;
-	margin-top: 9px;
-    border-radius:100px;
-}
-
-/* HOVER ELLIPSES */
-
-.ellipse1:hover{
-    transform: scale(1.10);
-    transition-duration: 1s;
-}
-
-.ellipse2:hover{
-    transform: scale(1.10);
-    transition-duration: 1s;
-}
-
-.ellipse3:hover{
-    transform: scale(1.10);
-    transition-duration: 1s;
-}
-
-.pen{
-	width: 75px;
-	height: 75px;
-	margin-top: 20px;
-	margin-left: 22px;
-}
-
-.pen:hover{
-	transform: scale(1.1);
-	transition-duration: 1s;
-}
-
-.cursor{
-	width: 45px;
-	height: 45px;
-	margin-top: 19px;
-	margin-left: 20px;
-}
-
-.cursor:hover{
-	transform: scale(1.3);
-	transition-duration: 1s;
-}
-
-.camera{
-	width: 60px;
-	height: 50px;
-	margin-top:15px;
-	margin-left: 16px;
-}
-
-.camera:hover{
-	transform: scale(1.2);
-	transition-duration: 1s;
-}
-
-/**********************************************************/
-/***********************FIN PARTIE 1***********************/
-/**********************************************************/
-
-
-/**********************************************************/
-/**********************PARTIE 2****************************/
-/**********************************************************/
-
-
-/* FLEX BOITES */
- .flexBoitesDroite{
-    display: flex;
+h1{
+    font-family: "Raleway";
     margin: 0px;
+    font-weight: 200;
 }
-
-.flexBoitesGauche{
-    display: flex;
+h2{
+    font-family: "Raleway";
     margin: 0px;
-    float: right;
+    font-weight: 200;
+}
+.menu>a{
+    margin: 0px;
+    color: #000d1f;
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 500;
+    padding: 0px;
+    margin: 10px;
+}
+a:hover{
+    color: #FFB800;
+    transition: 0.2s;
+}
+a{
+    margin: 0px;
+    color: white;
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 500;
+    padding: 0px;
+    margin: 10px;
 }
 
-/* BACK */
-
-.team{
-    background-image: url(../img/team.jpg);
-
-    height: 500px;
-    margin-top: 40px;
+/* MAIN */
+.bg{
+    height: 100%;
 }
 
-.blogpic{
-    background-image: url(../img/blog.jpg);
-
-    height: 500px;
-    margin-top: 40px;
+/* intro */
+.animatic{
+    animation: color 2s infinite alternate;
+}
+@keyframes color{
+    0%{
+        color: white;
+    }
+    100%{
+        color: #FFB800;
+    }
 }
 
-.pic{
-    background-image: url(../img/pic.jpg);
-
-    height: 500px;
-    margin-top: 40px;
+@keyframes blur{
+    3%{
+        opacity: 0;
+        letter-spacing: 5px;
+    }
+    20%{
+        opacity: 1;
+        letter-spacing: 0px;
+    }
+}
+.intro{
+    font-family: "Raleway";
+    color: white;
+    height: 400px;
 }
 
-
-/*****************************AGENCE************************/
-/* ABSOLUT */
-.ellipseAgence{
-    margin-top: 150px;
-    margin-left: 30px;
-    width: 200px;
-    height: 200px;
-    border-radius: 500px;
+.txt{
+    text-align: center;
+    padding: 10px;
+    margin: 15vh 0% 0px 0%;
+}
+.txt>p{
+    margin: 3px;
+    animation: blur 10s infinite;
+}
+button{
+    background: white;
+    color: #000d1f;
+    padding: 10px;
+    border: none;
+    margin: 0px 0px 10px 0px;
+    border-radius: 10px;
+}
+button:hover{
+    background: rgb(255, 145, 0);
+    color: white;
+    transform: scale(1.05);
+    transition: 0.4s;
 }
 
-.ellipseAgence:hover{
-    transform: scale(1.10);
-    transition-duration: 1s;
-}
-
-.home{
-    width: 125px;
-    height: 120px;
-    margin-top: 30px;
-    margin-left: 39px;
-}
-
-.home:hover{
-    transform: scale(1.2);
-    transition-duration: 1s;
-}
-
-.cadreAgence{
-    margin-top: 211px;
-    margin-left: 20px;
-    width: 325px;
-    height: 78px;
-    border: 3px solid #FFFFFF;
-    box-sizing: border-box;
-}
-
-.agence{
-    padding-top: 12px;
-    color: #ffffff;
-    font-size: 40px;
+/* equipe */
+.equipe{
+    background: white;
+    padding: 10px;
+    color: #000d1f;
     font-family: "Raleway";
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-
-.agence a{
-    color: #ffffff;
-    padding: 10px 12px;
-    text-decoration: none;
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "a"" b ""c ""d"" e";
 }
-
-.agence a:hover{
-    color: #FFB800;
-    transition-duration: 1s;
+.a{
+    grid-area: a;
 }
-
-
-/****************************EQIUPE************************/
-
-.ellipseEquipe{
-    margin-top: 150px;
-    margin-right: 30px;
-    width: 200px;
-    height: 200px;
-    border-radius: 500px;
+.b{
+    grid-area: b;
 }
-
-.ellipseEquipe:hover{
-    transform: scale(1.10);
-    transition-duration: 1s;
+.c{
+    grid-area: c;
 }
-
-.man{
-    width: 100px;
-    height: 150px;
-    margin-top: 20px;
-    margin-left: 47px;
+.d{
+    grid-area: d;
 }
+.e{
+    grid-area: e;}
 
-.man:hover{
-    transform: scale(1.2);
-    transition-duration: 1s;
+.pers{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "img nom";
+    align-items: center;
+    background: #0e0e0e;
+    margin: 2px;
 }
-
-.cadreEquipe{
-    margin-top: 211px;
-    margin-right: 20px;
-    width: 325px;
-    height: 78px;
-    border: 3px solid #FFFFFF;
-    box-sizing: border-box;
+.pers2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "img nom";
+    align-items: center;
+    background: #0e0e0e;
+    margin: 2px;
 }
-
-.equipe{
-    padding-top: 12px;
-    color: #ffffff;
-    font-size: 40px;
-    font-family: Raleway;
+.img{
+    grid-area: img;
+}
+.nom{
+    grid-area: nom;
+    color: white;
+    padding-bottom: 20px;
+}
+.nom>a{
+    color: rgb(255, 145, 0);
+}
+.nom>a:hover{
+    color: rgb(255, 196, 0);
+}
+/* agence */
+.agence{
+    background: #0e0e0e;
+    color: white;
+    font-family: "Raleway";
     text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.agence>div:nth-child(2){
+    padding: 20px;
+
+}
+.flex{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
 }
 
-.equipe a{
-    color: #ffffff;
-    padding: 10px 12px;
-    text-decoration: none;
-}
-
-.equipe a:hover{
-    color: #FFB800;
-    transition-duration: 1s;
-}
-
-/***********************BLOG*******************************/
-
-.ellipseBlog{
-    margin-top: 150px;
-    margin-left: 30px;
-    width: 200px;
-    height: 200px;
-    border-radius: 500px;
-}
-
-.ellipseBlog:hover{
-    transform: scale(1.10);
-    transition-duration: 1s;
-}
-
-.ecrit{
-    width: 118px;
-    margin-top: 40px;
-    margin-left: 40px;
-}
-
-.ecrit:hover{
-    transform: scale(1.2);
-    transition-duration: 1s;
-}
-
-.cadreBlog{
-    margin-top: 211px;
-    margin-left: 20px;
-    width: 325px;
-    height: 78px;
-    border: 3px solid #FFFFFF;
-    box-sizing: border-box;
-}
-
-.blog{
-    padding-top: 12px;
-    color: #ffffff;
-    font-size: 40px;
-    font-family: Raleway;
+/* REA */
+.rea{
+    background: #0e0e0e;
+    color: white;
+    font-family: "Raleway";
     text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    margin-bottom: 20px;
+    display: flex;
+    padding: 20px;
 }
 
-.blog a{
-    color: #ffffff;
-    padding: 10px 12px;
-    text-decoration: none;
-}
+/* FOOTER */
 
-.blog a:hover{
-    color: #FFB800;
-    transition-duration: 1s;
-}
-
-/**********************GALERIE*****************************/
-
-.ellipseGalerie{
-    margin-top: 150px;
-    margin-right: 30px;
-    width: 200px;
-    height: 200px;
-    border-radius: 500px;
-}
-
-.ellipseGalerie:hover{
-    transform: scale(1.10);
-    transition-duration: 1s;
-}
-
-.photo{
-    width: 118px;
-    margin-top: 48px;
-    margin-left: 42px;
-}
-
-.photo:hover{
-    transform: scale(1.2);
-    transition-duration: 1s;
-}
-
-.cadreGalerie{
-    margin-top: 211px;
-    margin-right: 20px;
-    width: 325px;
-    height: 78px;
-    border: 3px solid #FFFFFF;
-    box-sizing: border-box;
-}
-
-.galerie{
-    padding-top: 12px;
-    color: #ffffff;
-    font-size: 40px;
-    font-family: Raleway;
+footer{
+    background-color: black;
     text-align: center;
-}
-
-.galerie a{
-    color: #ffffff;
-    padding: 10px 12px;
-    text-decoration: none;
-}
-
-.galerie a:hover{
-    color: #FFB800;
-    transition-duration: 1s;
-}
-
-/**********************************************************/
-/**********************FIN PARTIE 2************************/
-/**********************************************************/
-
-@media only screen and (max-width: 1020px) {
-
-  .flexBoitesDroite{
-     display: block;
- }
-
- .flexBoitesGauche{
-     display: block;
- }
-
- .flexBoitesDroite>div{
-    display: inline-block;
-}
-
-.flexBoitesGauche>div{
-   display: inline-block;
-}
-
- .team{
-   display: flex;
-   margin:20px;
-   justify-content: center;
- }
-
- .blogpic{
-   display: flex;
-   margin:20px;
-   justify-content: center;
- }
-
- .pic{
-   display: flex;
-   margin:20px;
-   justify-content: center;
- }
-}
-
-@media only screen and (max-width: 640px) {
-  .ellipseEquipe{
-      margin-top: 0;
-      margin-right: 0;
-  }
-
-  .cadreEquipe{
-      margin-top: 0;
-      margin-right: 0;
-  }
-  .ellipseGalerie{
-      margin-top: 0;
-      margin-right: 0;
-  }
-
-  .cadreGalerie{
-      margin-top: 0;
-      margin-right: 0;
-  }
-
-  .ellipseBlog{
-      margin-top: 0;
-      margin-left: 0;
-  }
-
-  .cadreBlog{
-      margin-top: 0;
-      margin-left: 0;
-  }
-
-  .flexBoitesDroite>div{
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     margin-top: 50px;
- }
-
- .flexBoitesGauche>div{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 35px;
+    font-family :'Raleway';
+    color: white;
+    font-size: 10px;
     margin-top: 50px;
- }
+}
 
- .animatic {
-   font-size: 62px;
- }
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 10pt;
+    margin: 30px;
+    font-weight: 500;
+}
 
- .ligne {
-   display: none;
- }
+footer a:hover{
+    color: #FFB800;
+    transition-duration: 0.5s;
+}
+
+hr{
+    border: 1px solid white;
+    width: 50%;
+    margin-top: 15px;
 }

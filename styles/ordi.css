@@ -1,0 +1,48 @@
+.agence{
+    background: #0e0e0e;
+    color: white;
+    font-family: "Raleway";
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.intro{
+    font-family: "Raleway";
+    color: white;
+    height: 70vh;
+}
+
+
+.pers{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "img"" nom";
+    align-items: center;
+    background: #0e0e0e;
+    margin: 2px;
+}
+
+.pers2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "img ""nom";
+    align-items: center;
+    background: #0e0e0e;
+    margin: 2px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "a b c d e";
+}
+.gridrea{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "img ""p";
+}
