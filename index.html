@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<title>Animatic</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="styles/style_accueil.css">
-	<link rel="stylesheet" media="screen and (min-width: 800px)" href="styles/ordi.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link 
+    href="https://fonts.googleapis.com/css?family=Hind+
+    Madurai:400,600|Lora:400,400i,700,700i|Raleway:200,200i,300,300i,400,400i,600,700,800,900" 
+    rel="stylesheet">
+  
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 800px)" href="styles/ordi.css">
 
-	
-	<link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="icon"  href="img/favicon.png" />   
+    <title>ANIMATIC</title>
 </head>
-
 <body>
-
-	<header id="haut">
+    <header id="haut">
 		<div class="menu">
 			<img src="img/favicon.png" alt="" style="width: 7%">
 			<h2>Animatic</h2>
@@ -24,6 +27,8 @@
 				<a href="pages/Blog.html" class="">Blog</a>
 				<a href="#Equipe" class="">Equipe</a>
 				<a href="#Agence" class="">Agence</a>
+				<a href="pages/Contact.html">Contact</a>
+
 			</div>
 			
 		</div>
@@ -36,13 +41,13 @@
 			<div class="txt">
 				<h1 class="animatic">ANIMATIC</h1>
 				<p class="blur">Une idée ? Nous la réalisons pour vous !</p>
-				<a href="pages/rea.html"><button>Découvrir nos réalisations</button></a>
+				<a href="pages/rea.html"><button class="shadow">Découvrir nos réalisations</button></a>
 				</a>
 			</div>
 		</div>
 
 		<!-- Agence -->
-		<div class="agence"  id="Agence">
+		<div class="agence shadow"  id="Agence">
 			<div class="flex">
 				<img src="img/agence.jpg" alt="" style="width: 100%">
 			</div>
@@ -54,17 +59,9 @@
 		</div>
 
 		<!-- Equipe -->
-		<div class="equipe" id="Equipe">
+		<div class="equipe shadow" id="Equipe">
 			<h1>Qui Sommes Nous ? Voici notre équipe.</h1>
 			<div class="grid">
-				<div class='pers a'>
-					<img src="img/pla.jpg" alt="" style="width: 100%" class="img">
-					<div class="nom">
-						<p >Léa</p>
-						<p class="description">Intéréssée par l'infographie et le design, je fais la majorité du contenu visuel du site.</p>
-						<a href="http://leaplatel.fr/index.html" target="_blank"> Portfolio</a>
-					</div>
-				</div>
 				<div class='pers2 b'>
 						<img src="img/ren.jpg" alt="" style="width: 100%" class="img">
 						<div class="nom">
@@ -73,6 +70,15 @@
 							<a href="https://thibautrenckly.wixsite.com/e-portfolio?fbclid=IwAR1gqrFFrlDiM1Jcx714K9PLHHfxvOCGFiwT_-rbm5-YkX8XJX8peLzqM1g" target="_blank"> Portfolio</a>
 						</div>
 				</div>
+				<div class='pers a'>
+					<img src="img/pla.jpg" alt="" style="width: 100%" class="img">
+					<div class="nom">
+						<p >Léa</p>
+						<p class="description">Intéréssée par l'infographie et le design, je fais la majorité du contenu visuel du site.</p>
+						<a href="http://leaplatel.fr/index.html" target="_blank"> Portfolio</a>
+					</div>
+				</div>
+				
 				<div class='pers c'>
 					<img src="img/bes.jpg" alt="" style="width: 100%" class="img">
 					<div class="nom">
@@ -100,28 +106,25 @@
 			</div>
 		</div>
 
-		<div class="rea"  id="rea">
-				<div class="flex">
-					<a href="https://leeeea.github.io/Tout_Sur_La_3D/">
-					<img src="img/logo.png" alt="" style="width: 100%"></a>
+		<div class="rea shadow"  id="rea">
+			<div>
+				<a href="https://leeeea.github.io/Tout_Sur_La_3D/">
+				<img src="img/logo.png" alt="" style="width: 100%"></a>
+			</div>
+			<div>
+				<div><a href="pages/rea.html">
+					<h1>Réalisation :</h1>
+					<h2>Le site Tout Sur La 3D</h2></a>
 				</div>
-				<div>
-					<div><a href="pages/rea.html">
-						<h1>Réalisation :</h1>
-						<h2>Le site Tout Sur La 3D</h2></a>
-					</div>
 					
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, quisquam! Optio blanditiis, excepturi maxime illo aperiam doloribus odit amet! Minus aliquam corporis esse, mollitia neque hic ratione? Reprehenderit, rem nobis?</p>
-				</div>
-	
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, quisquam! Optio blanditiis, excepturi maxime illo aperiam doloribus odit amet! Minus aliquam corporis esse, mollitia neque hic ratione? Reprehenderit, rem nobis?</p>
+			</div>
 		</div>
 	</main>
 
 
 	<footer>
-		<a href="pages/Blog.html">Blog</a>
 		<a href="pages/Contact.html">Contact</a>
-		<a href="pages/Contact.html">Réalisation</a>
 		<a href="#haut">Haut Page</a>
 		<hr>
 		<br>

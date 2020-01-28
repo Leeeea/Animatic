@@ -13,59 +13,79 @@
 
 <body>
 
-	<header>
+	<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link 
+    href="https://fonts.googleapis.com/css?family=Hind+
+    Madurai:400,600|Lora:400,400i,700,700i|Raleway:200,200i,300,300i,400,400i,600,700,800,900" 
+    rel="stylesheet">
+  
+    <link rel="stylesheet" href="../styles/style-cont.css">
+    <link rel="stylesheet" media="screen and (min-width: 800px)" href="../styles/ordi.css">
+
+    <link rel="icon"  href="../img/favicon.png">   
+    <title>ANIMATIC</title>
+</head>
+<body>
+    <header id="haut">
 		<div class="menu">
-                <div class="introrea">
-                        <img src="../img/bg2Mob.jpg" alt="bg" class="bg">
-                        <img src="../img/bg2.jpg" alt="bg" class="bg">
-                </div>
+			<img src="../img/favicon.png" alt="" style="width: 7%">
 			<h2>Animatic</h2>
 			<p>Agence de création Web</p>
 			<!-- MENU-->
 			<div class="menu">
-				<a href="../index.html" class="">Accueil</a>
+                <a href="../index.html">Accueil</a>
+				<a href="../pages/rea.html" class="">Réalisations</a>
+				<a href="../pages/Blog.html" class="">Blog</a>
 				<a href="../index.html#Equipe" class="">Equipe</a>
 				<a href="../index.html#Agence" class="">Agence</a>
-				<a href="../pages/Contact.html" class="">Contact</a>
+				
+
 			</div>
 			
 		</div>
 	</header>
 
+	<main>
+		<form action="/ma-page-de-traitement" method="post">
 
-    <form action="/ma-page-de-traitement" method="post">
-
-        <div>
-            <input type="text" id="name" name="user_name" placeholder="Nom">
-        </div>
-
-        <div>
-            <input type="email" id="mail" name="user_mail" placeholder="Adresse Mail">
-        </div>
-
-        <div>
-                <input type="text" id="sujet" name="user_sujet" placeholder="Sujet de votre message">
-        </div>
-
-        <div>
-            <textarea id="msg" name="user_message" placeholder="Entrez votre texte ici !"></textarea>
-        </div>
-
-        <div class="button">
-                <button type="submit">Envoyer</button>
+            <div>
+                <input style="width: 100%" type="text" id="name" name="user_name" placeholder="Nom">
             </div>
-
-    </form>
-
+    
+            <div>
+                <input style="width: 100%" type="email" id="mail" name="user_mail" placeholder="Adresse Mail">
+            </div>
+    
+            <div>
+                    <input style="width: 100%" type="text" id="sujet" name="user_sujet" placeholder="Sujet de votre message">
+            </div>
+    
+            <div>
+                <textarea style="width: 100%; height: 200px" id="msg" name="user_message" placeholder="Entrez votre texte ici !"></textarea>
+            </div>
+    
+            <div class="button">
+                    <button type="submit">Envoyer</button>
+                </div>
+    
+        </form>
+    </main>
 
 	<footer>
-            <a href="pages/Blog.html">Blog</a>
-            <a href="pages/Contact.html">Contact</a>
-            <a href="pages/Contact.html">Réalisation</a>
-            <hr>
-            <br>
-            Animatic - Tous droits réservés - 2019
-        </footer>
+		<a href="../index.html">Contact</a>
+		<a href="#haut">Haut Page</a>
+		<hr>
+		<br>
+		Animatic - Tous droits réservés - 2019
+	</footer>
+
+</body>
+</html>
 
 
 </body>
