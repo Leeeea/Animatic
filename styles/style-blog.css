@@ -36,6 +36,12 @@ body{
     margin: 5px;
 }
 
+.menu>h2{
+    font-family: "Raleway";
+    margin: 0px;
+    color: #000d1f;
+    font-weight: 200;
+}
 h2{
     font-family: "Raleway";
     margin: 0px;
